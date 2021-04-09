@@ -51,7 +51,7 @@ namespace ConsoleUtility
             s_ConsoleData.OnLogUpdated = UpdateLog;
             s_Console = this;
 
-            Application.logMessageReceived += HandleUnityLog;
+            //Application.logMessageReceived += HandleUnityLog;
 
             LogText.font.RequestCharactersInTexture("qwertyuiopasdfghjklzxcvbnmQWERYTUIOPASDFGHJKLZXCVBNM1234567890~`!@#$%^&*()_+{}[]:;\"'/.,?><");
 
@@ -65,7 +65,7 @@ namespace ConsoleUtility
             s_ConsoleData.OnLogUpdated = null;
             s_Console = null;
             s_ConsoleData = null;
-            Application.logMessageReceived -= HandleUnityLog;
+            //Application.logMessageReceived -= HandleUnityLog;
         }
 
         public void UpdateAutoPanel()
